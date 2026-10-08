@@ -8,6 +8,8 @@ Typed [RTK Query](https://redux-toolkit.js.org/rtk-query/overview) endpoints for
 
 One line per RPC: request and response types come straight from your `.proto` files, and the protobuf quirks that break RTK Query out of the box are handled for you.
 
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Lelouchhikka/rtk-query-connect/tree/main/example?file=src%2Fapi.ts)
+
 ```ts
 listTodos: rpcQuery(build, TodoService.method.listTodos, { providesTags: ["Todo"] }),
 ```
@@ -81,6 +83,10 @@ Headers, auth and retries belong to the transport — use Connect [interceptors]
 
 - [ ] Server-streaming RPCs into the cache via `onCacheEntryAdded`
 - [ ] `protoc-gen-rtk-query` — generate endpoints and hooks with `buf generate`
+
+## Example
+
+[`example/`](example) is a Vite + React app with an in-memory Connect server: int64 args, tag invalidation and `ConnectError` handling. Run it locally with `cd example && npm i && npm run dev`, or open it in StackBlitz above.
 
 ## Development
 
