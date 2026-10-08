@@ -1,0 +1,55 @@
+{
+  "name": "rtk-query-connect",
+  "version": "0.1.0",
+  "description": "Typed RTK Query endpoints for ConnectRPC / gRPC-Web services",
+  "keywords": [
+    "rtk-query",
+    "redux-toolkit",
+    "connectrpc",
+    "grpc",
+    "grpc-web",
+    "protobuf",
+    "buf"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lelouchhikka/rtk-query-connect.git"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "gen": "buf generate",
+    "prepublishOnly": "pnpm build"
+  },
+  "peerDependencies": {
+    "@bufbuild/protobuf": "^2.0.0",
+    "@connectrpc/connect": "^2.0.0",
+    "@reduxjs/toolkit": "^2.0.0"
+  },
+  "devDependencies": {
+    "@bufbuild/buf": "^1.73.0",
+    "@bufbuild/protobuf": "^2.16.0",
+    "@bufbuild/protoc-gen-es": "^2.16.0",
+    "@connectrpc/connect": "^2.2.0",
+    "@reduxjs/toolkit": "^2.13.0",
+    "@types/react": "^19.3.0",
+    "react": "^19.3.0",
+    "react-redux": "^9.3.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  },
+  "packageManager": "pnpm@10.18.1"
+}
