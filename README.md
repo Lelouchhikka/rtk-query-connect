@@ -1,5 +1,9 @@
 # rtk-query-connect
 
+[![npm](https://img.shields.io/npm/v/rtk-query-connect)](https://www.npmjs.com/package/rtk-query-connect)
+[![CI](https://github.com/Lelouchhikka/rtk-query-connect/actions/workflows/ci.yml/badge.svg)](https://github.com/Lelouchhikka/rtk-query-connect/actions/workflows/ci.yml)
+[![license](https://img.shields.io/npm/l/rtk-query-connect)](LICENSE)
+
 Typed [RTK Query](https://redux-toolkit.js.org/rtk-query/overview) endpoints for [ConnectRPC](https://connectrpc.com/) / gRPC-Web services.
 
 One line per RPC: request and response types come straight from your `.proto` files, and the protobuf quirks that break RTK Query out of the box are handled for you.
