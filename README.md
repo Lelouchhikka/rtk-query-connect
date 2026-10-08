@@ -8,6 +8,8 @@ Typed [RTK Query](https://redux-toolkit.js.org/rtk-query/overview) endpoints for
 
 One line per RPC: request and response types come straight from your `.proto` files, and the protobuf quirks that break RTK Query out of the box are handled for you.
 
+![Demo: typed queries, int64 cache keys, ConnectError handling and tag invalidation](docs/demo.gif)
+
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Lelouchhikka/rtk-query-connect/tree/main/example?file=src%2Fapi.ts)
 
 ```ts
